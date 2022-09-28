@@ -1,0 +1,52 @@
+.exercise-info{
+    border: 1px solid #cfd8dd;
+    border-radius: 8px;
+    width: 325px;
+    height: 430px;
+    
+    position: relative;
+  
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.exercise-info p{
+    padding-left: 6px;
+}
+.exercise-info h2{
+    padding-left: 6px;
+}
+.exercise-info img{
+    height: 200px;
+    width: 300px;
+    margin: 8px;
+    margin-bottom: 0px;
+    border-radius: 7px;
+    padding-left: 5px;
+}
+.btn{
+    width: 100%;
+    border: 0px;
+    border-radius: 0px 0px 7px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 5px;
+    background-color: #c9a2e9;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 7px;
+    
+
+}
+.btn p{
+    color: white;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #8e21e7;
+}

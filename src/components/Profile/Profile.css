@@ -1,0 +1,53 @@
+.profile{
+    position: sticky;
+    top: 0px;
+    padding: 30px 18px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 5px;
+    
+}
+.break button{
+    background-color: solid rgb(243, 221, 245);
+    border: 0px;
+    border-radius:  5px ;
+    font-size: 25px;
+    gap: 8px;
+}
+button b:hover{
+    color: blueviolet;
+}
+.ex-time{
+    display: inline;
+}
+.ex-time input{
+    border: 0px;
+}
+.brk-time{
+    display: inline;
+  
+}
+.brk-time input{
+    border: 0px;
+    margin-bottom: 5px;
+}
+.btn-activity{
+    width: 100%;
+    border: 0px;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 8px;
+}
+.btn-activity p{
+    text-align: center;
+  
+}
