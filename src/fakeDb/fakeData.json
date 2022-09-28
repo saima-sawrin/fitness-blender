@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "20-25",
+        "time": 20,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      },
+    {
+        "id": "2",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "25-30",
+        "time": 30,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      },
+    {
+        "id": "3",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "20-25",
+        "time": 25,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      },
+    {
+        "id": "4",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "25-30",
+        "time": 20,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      },
+    {
+        "id": "5",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "20-25",
+        "time": 25,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      },
+    {
+        "id": "6",
+        "name": "Dumble",
+        "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
+        "age": "25-30",
+        "time": 20,
+    
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg",
+    
+      }
+]
