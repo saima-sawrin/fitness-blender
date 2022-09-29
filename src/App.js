@@ -1,6 +1,7 @@
 
 import './App.css';
 import Club from './components/Club/Club';
+import Footer from './components/footer/Footer';
 import Header from './components/Header/Header';
 
 
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header></Header>
       <Club></Club>
+      <Footer></Footer>
       
 
     </div>

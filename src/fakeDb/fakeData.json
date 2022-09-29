@@ -6,27 +6,27 @@
         "age": "20-25",
         "time": 20,
     
-        "img": "https://www.pexels.com/photo/women-doing-yoga-together-8436947/"
+        "img": "1.jpg"
     
       },
     {
         "id": "2",
-        "name": "Dumble",
+        "name": "Push-ups",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "25-30",
         "time": 30,
     
-        "img": "https://www.pexels.com/photo/man-in-black-shirt-exercising-at-the-park-8436931/"
+        "img": "2.jpg"
     
       },
     {
         "id": "3",
-        "name": "Dumble",
+        "name": "Squats",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "20-25",
         "time": 25,
     
-        "img": "https://www.pexels.com/photo/person-holding-barbell-841130/"
+        "img": "3.jpg"
     
       },
     {
@@ -36,7 +36,7 @@
         "age": "25-30",
         "time": 20,
     
-        "img": "https://www.pexels.com/photo/man-working-out-2294361/"
+        "img": "4.jpg"
 
       },
     {
@@ -46,7 +46,7 @@
         "age": "20-25",
         "time": 25,
     
-        "img": "https://www.pexels.com/photo/elderly-woman-in-black-clothing-sitting-on-yoga-mat-8436949/"
+        "img": "5.jpg"
     
       },
     {
@@ -56,7 +56,7 @@
         "age": "25-30",
         "time": 20,
     
-        "img": "https://www.pexels.com/photo/elderly-man-and-woman-doing-yoga-together-7500699/"
+        "img": "6.jpg"
     
       }
 ]

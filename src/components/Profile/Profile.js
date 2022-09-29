@@ -12,15 +12,20 @@ const [value,setValue] = useState([])
 //    setTimeout(() => {
 //      window.location.reload();
 //    }, 6000);
+let time=0;
+for(let item of cart){
+   time = time + item.time;
+}
 
-useEffect(()=>{
-   const newValue = getStorage();
-       if(newValue){
-         setValue(newValue)
-       }else{
-         setValue('0s')
-       }
-     },[])
+
+// useEffect(()=>{
+//    const newValue = getStorage();
+//        if(newValue){
+//          setValue(newValue)
+//        }else{
+//          setValue('0s')
+//        }
+//      },[])
      
 const breakTime =(e)=>{
    let breaktime = e.target.innerText;
@@ -29,11 +34,7 @@ const breakTime =(e)=>{
   saveToStorage(breakTime);
   localStorage.setItem(time, value)
  }
- let time=0;
- for(let item of cart){
-    time = time + item.time;
- }
- 
+
     return (
         <div className='profile'>
            <div>
