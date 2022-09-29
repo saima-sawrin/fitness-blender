@@ -1,17 +1,16 @@
 import React, { useEffect, useState }  from 'react';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { getStorage, saveToStorage } from '../../utilities/Db';
 import './Profile.css';
 
 const Profile = ({cart}) => {
   
-
+const notify = () => toast("Wow so easy!");
 const [value,setValue] = useState([])
-// const notify =()=>{
-//    toast("Thank you ,");
-//    localStorage.clear()
-//    setTimeout(() => {
-//      window.location.reload();
-//    }, 6000);
+
 let time=0;
 for(let item of cart){
    time = time + item.time;
@@ -31,7 +30,7 @@ const breakTime =(e)=>{
    let breaktime = e.target.innerText;
 
    setValue(breaktime);
-  saveToStorage(breakTime);
+   saveToStorage(breakTime);
   localStorage.setItem(time, value)
  }
 
@@ -63,12 +62,13 @@ const breakTime =(e)=>{
         <div className='details'>
            <h2>Exercise Details</h2>
            <div className='ex-time'>
-            <h3> Exercise Time : ${time} sec</h3>
+            <h3> Exercise Time :{time} sec</h3>
            </div>
            <div className='brk-time'>
             <h3>Break Time :{value} second </h3>
            </div>
-           <button className='btn-activity' ><p>Activity Complete</p></button>
+           <button className='btn-activity' onClick={notify} ><p>Activity Complete</p></button>
+           <ToastContainer/>
         </div>
         </div>
     );

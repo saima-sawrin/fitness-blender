@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Dumble",
+        "name": "Squats",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "20-25",
         "time": 20,
@@ -11,7 +11,7 @@
       },
     {
         "id": "2",
-        "name": "Dumble",
+        "name": "Push-up",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "25-30",
         "time": 30,
@@ -31,7 +31,7 @@
       },
     {
         "id": "4",
-        "name": "Dumble",
+        "name": "Bent-over Row",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "25-30",
         "time": 20,
@@ -41,7 +41,7 @@
       },
     {
         "id": "5",
-        "name": "Dumble",
+        "name": "Abdominal Crunches",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "20-25",
         "time": 25,
@@ -51,7 +51,7 @@
       },
     {
         "id": "6",
-        "name": "Dumble",
+        "name": "Lunges",
         "details": "Exercise is defined as any movement that makes your muscles work and requires your body to burn calories.",
         "age": "25-30",
         "time": 20,

@@ -51,6 +51,14 @@
    .quesContainer h1{
     text-align: center;
    }
+   .footer{
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+   }
+   .footer p{
+    text-align: center;
+   }
 }
 @media screen and (min-width:689px) and (max-width:992px) {
     .club-container{
@@ -76,6 +84,15 @@
         align-items: center;
         justify-content: center;
         padding-right: 3px;
+       }
+       .footer{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+       .footer p{
+        margin-left: 0px;
+        text-align: center;
        }
     
 }
