@@ -17,14 +17,14 @@ for(let item of cart){
 }
 
 
-// useEffect(()=>{
-//    const newValue = getStorage();
-//        if(newValue){
-//          setValue(newValue)
-//        }else{
-//          setValue('0s')
-//        }
-//      },[])
+useEffect(()=>{
+   const newValue = getStorage();
+       if(newValue){
+         setValue(newValue)
+       }else{
+         setValue('0s')
+       }
+     },[])
      
 const breakTime =(e)=>{
    let breaktime = e.target.innerText;
