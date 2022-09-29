@@ -8,26 +8,39 @@ import './Club.css'
 const Club = () => {
     
     const [exercises , setExercise] =  useState([]);
+    const [cart,setCart] = useState([]);
     // const [profile , setProfile] = useState([]);
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res => res.json())
-        .then(data => setExercise(data) ,)
+        .then(data => setExercise(data))
     },[])
+
+    const addTimeHandle = (exercise)=>{
+    
+      const array = [0, 1, 2, 3, 4, 5];
+      setCart([...cart,exercise])
+        //  const newNumber = array.map(arr=>console.log(arr))
+     }
   
+    
     return (
         <div className='club-container'>
         
             <div className='exercise-container'>
             {
-             exercises.map(exercise => <Exercise exercise={exercise}
-             key = {exercise.id}></Exercise> )
+             exercises.map(exercise => <Exercise
+              addTimeHandle={addTimeHandle}
+               exercise={exercise}
+             key = {exercise.id}
+             ></Exercise> )
                 
                }
             </div>
             <div className='profile-container'>
               {
-                <Profile>
+                
+                <Profile cart={cart}>
                     
                 </Profile>
               }

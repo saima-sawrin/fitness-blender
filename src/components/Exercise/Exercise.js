@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Exercise.css'
 
-const Exercise = (props) => {
-    const{img , name , details, age , time } = props.exercise;
-    const{handleToAddExTime} = props.exercise;
+const Exercise = ({exercise,addTimeHandle}) => {
+    const{img , name , details, age , time } = exercise;
+    
     // const[added , setAdded] = useState(true);
     
     return (
@@ -18,7 +18,8 @@ const Exercise = (props) => {
          {/* <button className='btn' onClick={()=>setAdded(!added)}>
             {added ?  "Add To List" : "Added"}
          </button> */}
-         <button className='btn' onClick={()=>handleToAddExTime(props.exercise)}>
+         {/* <button className='btn' onClick={()=>handleToAddExTime(props.exercise)}> */}
+         <button onClick={() => addTimeHandle(exercise.time)} className="btn">
           Add to List
          </button>
 
