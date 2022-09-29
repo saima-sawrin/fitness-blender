@@ -1,6 +1,6 @@
-const saveToStorage = (id)=>{
+const saveToStorage = (time)=>{
 
-    localStorage.setItem('breaktime', id)
+    localStorage.setItem('breaktime', time)
  
  }
  

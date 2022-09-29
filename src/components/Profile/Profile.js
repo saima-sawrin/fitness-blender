@@ -1,5 +1,5 @@
 import React, { useEffect, useState }  from 'react';
-import { getStorage } from '../../utilities/Db';
+import { getStorage, saveToStorage } from '../../utilities/Db';
 import './Profile.css';
 
 const Profile = ({cart}) => {
@@ -18,7 +18,7 @@ useEffect(()=>{
        if(newValue){
          setValue(newValue)
        }else{
-         setValue('0 s')
+         setValue('0s')
        }
      },[])
      
@@ -26,7 +26,8 @@ const breakTime =(e)=>{
    let breaktime = e.target.innerText;
 
    setValue(breaktime);
-   // saveToStorage(breaktime)
+  saveToStorage(breakTime);
+  localStorage.setItem(time, value)
  }
  let time=0;
  for(let item of cart){
