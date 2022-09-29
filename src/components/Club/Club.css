@@ -26,6 +26,7 @@
     margin-right: 8px;
     margin-left: 0px;
     padding-left: 0px;
+    padding-right: 10px;
     }
     .exercise-container{
         display: grid;
@@ -33,12 +34,14 @@
         flex-direction: column;
         margin-right: 5px;
         width: 100%;
+        padding-right: 10px;
     }
     .profile-container{
         width: 100%;
         display: inline;
-
+        position: relative;
         height: 100%;
+        padding-right: 10px;
     }
    .quesContainer{
     width: 80%;
@@ -52,12 +55,16 @@
     text-align: center;
    }
    .footer{
-      text-align: center;
-      align-items: center;
+      text-align: left;
+      align-items: left ;
       justify-content: center;
+      
    }
    .footer p{
-    text-align: center;
+    text-align: left;
+   margin-right: 30%;
+
+
    }
 }
 @media screen and (min-width:689px) and (max-width:992px) {
@@ -86,13 +93,14 @@
         padding-right: 3px;
        }
        .footer{
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        text-align: left;
+        align-items: left;
+        
        }
        .footer p{
-        margin-left: 0px;
-        text-align: center;
+      
+        text-align: left;
+        margin-right: 30%;
        }
     
 }

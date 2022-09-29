@@ -5,6 +5,11 @@
     align-items: center;
     justify-content: center;
 }
+.btn-activity{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .about{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);

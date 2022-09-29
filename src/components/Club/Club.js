@@ -9,7 +9,7 @@ const Club = () => {
     
     const [exercises , setExercise] =  useState([]);
     const [cart,setTime] = useState([]);
-    // const [profile , setProfile] = useState([]);
+ 
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res => res.json())
@@ -18,9 +18,9 @@ const Club = () => {
 
     const addTimeHandle = (exercise)=>{
       console.log(exercise.time);
-      // const array = [0, 1, 2, 3, 4, 5];
+   
       setTime([...cart,exercise]);
-        //  const newNumber = array.map(arr=>console.log(arr))
+
      }
   
     
