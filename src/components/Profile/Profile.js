@@ -4,18 +4,14 @@ import './Profile.css';
 
 const Profile = ({cart}) => {
   
-// const [brkTime , setBreakTime] = useState({
-//    time: '0'
-// });
-// const handleBrkTime = (e) =>{
-
-// }
 
 const [value,setValue] = useState([])
-let time=0;
-for(let item of cart){
-time+=item.time;
-}
+// const notify =()=>{
+//    toast("Thank you ,");
+//    localStorage.clear()
+//    setTimeout(() => {
+//      window.location.reload();
+//    }, 6000);
 
 useEffect(()=>{
    const newValue = getStorage();
@@ -32,7 +28,10 @@ const breakTime =(e)=>{
    setValue(breaktime);
    // saveToStorage(breaktime)
  }
-
+ let time=0;
+ for(let item of cart){
+    time = time + item.time;
+ }
  
     return (
         <div className='profile'>
@@ -62,7 +61,7 @@ const breakTime =(e)=>{
         <div className='details'>
            <h2>Exercise Details</h2>
            <div className='ex-time'>
-            <h3> Exercise Time : {time} sec</h3>
+            <h3> Exercise Time : ${time} sec</h3>
            </div>
            <div className='brk-time'>
             <h3>Break Time :{value} second </h3>

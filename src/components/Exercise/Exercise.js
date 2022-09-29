@@ -19,7 +19,7 @@ const Exercise = ({exercise,addTimeHandle}) => {
             {added ?  "Add To List" : "Added"}
          </button> */}
          {/* <button className='btn' onClick={()=>handleToAddExTime(props.exercise)}> */}
-         <button onClick={() => addTimeHandle(exercise.time)} className="btn">
+         <button onClick={() => addTimeHandle(exercise)} className="btn">
           Add to List
          </button>
 

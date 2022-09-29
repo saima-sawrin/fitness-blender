@@ -8,7 +8,7 @@ import './Club.css'
 const Club = () => {
     
     const [exercises , setExercise] =  useState([]);
-    const [cart,setCart] = useState([]);
+    const [cart,setTime] = useState([]);
     // const [profile , setProfile] = useState([]);
     useEffect(()=>{
         fetch('fakeData.json')
@@ -17,9 +17,9 @@ const Club = () => {
     },[])
 
     const addTimeHandle = (exercise)=>{
-    
-      const array = [0, 1, 2, 3, 4, 5];
-      setCart([...cart,exercise])
+      console.log(exercise.time);
+      // const array = [0, 1, 2, 3, 4, 5];
+      setTime([...cart,exercise]);
         //  const newNumber = array.map(arr=>console.log(arr))
      }
   
