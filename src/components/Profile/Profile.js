@@ -4,10 +4,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { getStorage, saveToStorage } from '../../utilities/Db';
+import { addToDb } from '../../utilities/fakedb';
 import './Profile.css';
 
 const Profile = ({cart}) => {
-  
+ addToDb();
 const notify = () => toast("Wow so easy!");
 const [value,setValue] = useState([])
 
@@ -15,7 +16,6 @@ let time=0;
 for(let item of cart){
    time = time + item.time;
 }
-
 
 // useEffect(()=>{
 //    const newValue = getStorage();
