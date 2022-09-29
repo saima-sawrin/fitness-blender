@@ -1,8 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState }  from 'react';
 import './Profile.css';
 
-const Profile = () => {
-    const [show, toggleShow] = useState(true);
+const Profile = ({cart}) => {
+  
+// const [brkTime , setBreakTime] = useState({
+//    time: '0'
+// });
+// const handleBrkTime = (e) =>{
+
+// }
+
+const [value,setValue] = useState([])
+let time=0;
+for(let item  in cart){
+  time+=item.time;
+}
+// useEffect(()=>{
+//    const newValue = getStorage()
+//    if(newValue){
+//      setValue(newValue)
+//    }else{
+//      setValue('0 s')
+//    }
+//  },[])
+
+const breakTime =(e)=>{
+   let breaktime = e.target.innerText;
+
+   setValue(breaktime);
+   // saveToStorage(breaktime);
+ }
+
+ 
     return (
         <div className='profile'>
            <div>
@@ -22,21 +51,21 @@ const Profile = () => {
         </div>
         <div className='break'>
             <h3>Add A Break</h3>
-          <button className='btn1'> <b> 10 </b></button>
-          <button className='btn2'> <b> 15 </b></button>
-          <button className='btn3'> <b> 20 </b></button>
-          <button className='btn4'> <b> 25 </b></button>
-          <button className='btn5'> <b> 30 </b></button>
+          <button className='btn1' onClick={breakTime}> <b> 10 </b></button>
+          <button className='btn2'onClick={breakTime}> <b> 15 </b></button>
+          <button className='btn3'onClick={breakTime}> <b> 20 </b></button>
+          <button className='btn4'onClick={breakTime}> <b> 25 </b></button>
+          <button className='btn5'onClick={breakTime}> <b> 30 </b></button>
         </div>
         <div className='details'>
            <h2>Exercise Details</h2>
            <div className='ex-time'>
-            <h3> Exercise Time : <input type="text" placeholder='seconds'/></h3>
+            <h3> Exercise Time : {time} sec </h3>
            </div>
            <div className='brk-time'>
-            <h3>Break Time : <input type="text" placeholder='seconds' /> </h3>
+            <h3>Break Time :{value} second </h3>
            </div>
-           <button className='btn-activity' onClick={() => toggleShow(true)}><p>Activity Complete</p></button>
+           <button className='btn-activity' ><p>Activity Complete</p></button>
         </div>
         </div>
     );

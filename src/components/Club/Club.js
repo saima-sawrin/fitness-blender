@@ -1,31 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
 import Profile from '../Profile/Profile';
 import Ques from '../Ques/Ques';
-
-
-
 import './Club.css'
-import Exercise from './Exercise/Exercise';
+
 
 const Club = () => {
     
     const [exercises , setExercise] =  useState([]);
+    // const [profile , setProfile] = useState([]);
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res => res.json())
-        .then(data => setExercise(data))
+        .then(data => setExercise(data) ,)
     },[])
-   
+  
     return (
         <div className='club-container'>
         
             <div className='exercise-container'>
             {
-                exercises.map(exercise=> <Exercise
-                exercise = {exercise}
-                key = {exercise.id}>
-            
-                </Exercise>)
+             exercises.map(exercise => <Exercise exercise={exercise}
+             key = {exercise.id}></Exercise> )
                 
                }
             </div>
@@ -36,7 +32,7 @@ const Club = () => {
                 </Profile>
               }
             </div>
-            <div className='q/A'>
+            <div className='quesContainer'>
               <Ques></Ques>
             </div>
         </div>

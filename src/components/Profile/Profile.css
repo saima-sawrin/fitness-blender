@@ -2,6 +2,8 @@
     position: sticky;
     top: 0px;
     padding: 30px 18px;
+    align-items: center;
+    justify-content: center;
 }
 .about{
     display: grid;
@@ -46,8 +48,12 @@ button b:hover{
     position: absolute;
     bottom: 0px;
     padding-top: 8px;
+    line-height: 2px;
+    margin-bottom: 0px;
 }
 .btn-activity p{
     text-align: center;
+ 
+   
   
 }

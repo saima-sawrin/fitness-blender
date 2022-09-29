@@ -1,0 +1,16 @@
+.container{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 50px;
+}
+.ques{
+    width: 100%;
+  
+    background-color: rgb(219, 196, 240);
+    border: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}

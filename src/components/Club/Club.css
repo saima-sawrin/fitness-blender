@@ -16,7 +16,66 @@
 }
 .profile-container{
     background-color: rgb(248, 245, 249);
-    padding-left: 6px;
 
    
+}
+@media only screen and  (max-width:688px) {
+    .club-container{
+    width: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+    margin-left: 0px;
+    padding-left: 0px;
+    }
+    .exercise-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+        margin-right: 5px;
+        width: 100%;
+    }
+    .profile-container{
+        width: 100%;
+        display: inline;
+
+        height: 100%;
+    }
+   .quesContainer{
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   margin-right: 8px;
+   margin-left: 0px;
+   }
+   .quesContainer h1{
+    text-align: center;
+   }
+}
+@media screen and (min-width:689px) and (max-width:992px) {
+    .club-container{
+        margin-right: 4px;
+        overflow: hidden;
+        padding-left: 0px;
+    }
+    .exercise-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .profile-container{
+        width: 100%;
+        display: inline;
+
+        height: 100%;
+    }
+    .quesContainer{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-right: 3px;
+       }
+    
 }
